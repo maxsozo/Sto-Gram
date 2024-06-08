@@ -1,9 +1,10 @@
-import Header from './components/Header/Header';
+import LoginForm from "./components/LoginPage/LoginForm";
+
 
 function App() {
   return (
     <div className="App">
-     <Header/>
+      <LoginForm/>
     </div>
   );
 }
