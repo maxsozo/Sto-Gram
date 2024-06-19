@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Register.module.css';
+import styles from './Register.module.scss';
 
 const Register = () => {
     return (
         <div className={styles.container}>
             <div className={styles.formWrapper}>
-                <h1 className={styles.title}>Registration</h1>
+                <h1 className={styles.title}>Реєстрація</h1>
                 <form className={styles.form}>
                     <input className={styles.input} type="text" placeholder="Username" />
                     <input className={styles.input} type="email" placeholder="Email" />

@@ -1,9 +1,13 @@
+$primary-color: #007bff;
+$secondary-color: #0056b3;
+$gradient-colors: linear-gradient(-45deg, #af411f, #7926cd, #23ccd5, #23d5ab);
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(-45deg, #af411f, #7926cd, #23ccd5, #23d5ab);
+    background: $gradient-colors;
     background-size: 400% 400%;
     animation: gradient 35s ease infinite;
 }
@@ -19,7 +23,7 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     text-align: center;
 }
@@ -42,26 +46,26 @@
     border-radius: 5px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-}
 
-.input:focus {
-    border-color: #007bff;
-    outline: none;
+    &:focus {
+        border-color: $primary-color;
+        outline: none;
+    }
 }
 
 .button {
     padding: 10px;
-    background-color: #007bff;
+    background-color: $primary-color;
     border: none;
     border-radius: 5px;
     color: white;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
 
-.button:hover {
-    background-color: #0056b3;
+    &:hover {
+        background-color: $secondary-color;
+    }
 }
 
 .registerPrompt {
@@ -70,10 +74,10 @@
 }
 
 .registerLink {
-    color: #007bff;
+    color: $primary-color;
     text-decoration: none;
-}
 
-.registerLink:hover {
-    text-decoration: underline;
+    &:hover {
+        text-decoration: underline;
+    }
 }

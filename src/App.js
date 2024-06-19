@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import LoginForm from './components/LoginPage/LoginForm';
-import Register from './components/LoginPage/Register';
+import RegisterForm from './components/LoginPage/RegisterForm';
 
 const App = () => {
     return (
@@ -9,8 +9,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Navigate to="/login" />} />
                 <Route path="/login" element={<LoginForm />} />
-                <Route path="/register" element={<Register />} />
-                {/* Додайте інші маршрути тут */}
+                <Route path="/register" element={<RegisterForm />} />
             </Routes>
         </Router>
     );
